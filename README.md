@@ -29,14 +29,15 @@ The has_happy_colors function takes the path of an image and two optional thresh
 
 The ColorThief library is utilized to obtain a palette of dominant colors from the image, which represents the most significant colors in the image.
 
-<img src="https://github.com/cmastral/Badge-Validation-Task/assets/48210775/42bca84d-fa36-4220-9542-846cd013e12f" width = 100 height = 100>
+<img src="https://github.com/cmastral/Badge-Validation-Task/assets/48210775/42bca84d-fa36-4220-9542-846cd013e12f" width = 300 height = 300>
 
-![palette](https://github.com/cmastral/Badge-Validation-Task/assets/48210775/5b994ee4-3361-41ea-835c-636406d7a9e7)
+<img src="https://github.com/cmastral/Badge-Validation-Task/assets/48210775/b583806f-82bc-4e3c-9120-401bb0a5e297" width = 300 height = 300>
 
 The RGB color is normalized to the range 0.0 to 1.0. Each color in the palette is converted to HSV using colorsys.rgb_to_hsv.
 
 The function checks if at least two dominant colors in the palette meet the criteria for a "happy feeling" color.
 If the condition is satisfied for at least two dominant colors, the function returns True, indicating that the image contains "happy feeling" colors. Otherwise, it returns False.
+
 
 ### Usage and Error Handling
 
