@@ -21,4 +21,40 @@ By defining color in the HSV color space, we can focus on specific color propert
 
 - Saturation (S): represents the intensity or purity of the color, ranging from 0 to 100%. Lower saturation means the color is closer to grayscale, while higher saturation means a more vivid color.
   
-- Value (V): represents the brightness or intensity of the color, ranging from 0 to 100%. 
+- Value (V): represents the brightness or intensity of the color, ranging from 0 to 100%.
+
+
+### Function: has_happy_colors
+The has_happy_colors function takes the path of an image and two optional thresholds for saturation and value. It uses the ColorThief library to extract the dominant colors palette from the image.
+
+The ColorThief library is utilized to obtain a palette of dominant colors from the image, which represents the most significant colors in the image.
+
+![1](https://github.com/cmastral/Badge-Validation-Task/assets/48210775/42bca84d-fa36-4220-9542-846cd013e12f)
+
+![palette](https://github.com/cmastral/Badge-Validation-Task/assets/48210775/5b994ee4-3361-41ea-835c-636406d7a9e7)
+
+The RGB color is normalized to the range 0.0 to 1.0. Each color in the palette is converted to HSV using colorsys.rgb_to_hsv.
+
+The function checks if at least two dominant colors in the palette meet the criteria for a "happy feeling" color.
+If the condition is satisfied for at least two dominant colors, the function returns True, indicating that the image contains "happy feeling" colors. Otherwise, it returns False.
+
+### Usage and Error Handling
+
+In the case of an image lacking "happy feeling" colors, the script can be used to identify such images, and corresponding error messages can be appended to an errors list.
+
+
+## Convert to badge
+
+The 'convert_to_badge function' is designed to transform an input image into a badge with specific characteristics:
+
+- resized to a square shape of 512x512 pixels using high-quality resizing techniques.
+
+- creates a circular mask and applies it to the resized image, resulting in the image being contained within a circular shape.
+
+- the pixels outside the circular area of the image become transparent, while pixels within the circular area retain their original color and transparency.
+
+- the transformed image, now in the form of a badge, is returned as the output.
+
+This function can be utilized for images to be converted into circular badges, such as avatar images. Additionally, it offers the flexibility to save the transformed badge as a PNG file or display it for further analysis.
+
+
