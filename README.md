@@ -43,7 +43,15 @@ If the condition is satisfied for at least two dominant colors, the function ret
 
 In the case of an image lacking "happy feeling" colors, the script can be used to identify such images, and corresponding error messages can be appended to an errors list.
 
+### Subjectivity of Color Perception
 
+The emotion analysis based on colors provided in this project is one of several methodologies that can be used to assess the potential emotional impact of colors. The "happy feeling" color detection in this task is based on color psychology, which associates certain colors with positive emotions or happiness. However, it is essential to understand that the perception of colors and their emotional impact can vary widely. Therefore, the classification of colors as "happy" is not definitive but rather an attempt to identify colors that are generally associated with positive emotions.
+
+- The happy_saturation_threshold determines the minimum saturation level required for a color to be considered "happy." Increasing this threshold may result in detecting more vibrant and saturated colors.
+
+- The happy_value_threshold determines the minimum brightness level required for a color to be considered "happy." Raising this threshold may result in detecting brighter colors.
+
+  
 ## Convert to badge
 
 The 'convert_to_badge function' is designed to transform an input image into a badge with specific characteristics:
