@@ -66,4 +66,6 @@ The 'convert_to_badge function' is designed to transform an input image into a b
 
 This function can be utilized for images to be converted into circular badges, such as avatar images. Additionally, it offers the flexibility to save the transformed badge as a PNG file or display it for further analysis.
 
+## Sample Images of Badge/Avatars
 
+A small selection of sample images of badge/avatars used as references during the development of this project is available in the "sample images" folder. 
