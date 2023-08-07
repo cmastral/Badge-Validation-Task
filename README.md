@@ -31,7 +31,7 @@ The ColorThief library is utilized to obtain a palette of dominant colors from t
 
 <img src="https://github.com/cmastral/Badge-Validation-Task/assets/48210775/42bca84d-fa36-4220-9542-846cd013e12f" width = 300 height = 300>
 
-<img src="https://github.com/cmastral/Badge-Validation-Task/assets/48210775/b583806f-82bc-4e3c-9120-401bb0a5e297" width = 300 height = 100>
+<img src="https://github.com/cmastral/Badge-Validation-Task/assets/48210775/eb54cc3a-4f6a-4d63-9016-c63eebaf9545" width = 300 height = 100>
 
 The RGB color is normalized to the range 0.0 to 1.0. Each color in the palette is converted to HSV using colorsys.rgb_to_hsv.
 
