@@ -82,7 +82,7 @@ def convert_to_badge(input_image_path):
     print("Image converted to badge successfully.")
 
 # Use case:
-path = r"/Users/cmastral/Desktop/test/1.png"
+path = r"path/to/image"
 #convert_to_badge(path)
 result, message = verify_badge(path) 
 
